@@ -1,0 +1,30 @@
+//*Titulo*/
+.titulo-saga {
+    color: #808080;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+//*Display*/
+.seccion-saga {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    .art-saga {
+        display: flex;
+        margin: 10px;
+    }
+    .p-saga {
+        background-color: #d3d3d3;
+        padding: 10px;
+        border: solid #808080;
+        margin: 0 100px 0 20px;
+    }
+    .img-saga {
+        margin: 0 20px 0 100px;
+        border: 3px solid #808080;
+    }
+    .seccion-saga__oblivion {
+        padding-bottom: 20px;
+    }
+}

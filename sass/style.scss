@@ -1,0 +1,111 @@
+///////////////////////////////////////////
+//Todo//////////////////////////////////////
+///////////////////////////////////////////
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merienda', cursive;
+}
+//Body-background
+body {
+    background-color: #000000;
+}
+
+//*////////////////////////////////////////*/
+//*Cabecera-Navegador//////////////////////*/
+//*///////////////////////////////////////*/
+
+//*Display header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #d3d3d3;
+    .header__nav {
+        align-self: center;
+        .header-nav__ul {
+            display: flex;
+            align-items: center;
+        }
+        .header-nav-ul__li {
+            margin: 25px;
+            padding: 5px;
+            font-size: 23px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+        }
+        .header-nav-ul-li__a {
+            text-decoration: none;
+            color: #000000;
+            padding: 3px 5px 3px 5px;
+        }
+    }
+}
+
+//*/////////////////////////////////////////*/
+//*Pie de Pagina////////////////////////////*/
+//*////////////////////////////////////////*/
+
+//*Instagram*/
+.footer_contenedor__instagram {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    padding: 10px;
+    background-color: #d3d3d3;
+}
+.footer_contenedor__instagram a {
+    align-self: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+//*GitHub*/
+.footer_contenedor__email {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #d3d3d3;
+}
+.footer_contenedor__email a {
+    align-self: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+//*Facebook*/
+.footer_contenedor__facebook {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: end;
+    padding: 10px;
+    background-color: #d3d3d3;
+}
+.footer_contenedor__facebook a {
+    align-self: center;
+    padding: 5px;
+    text-decoration: none;
+    color: #000000;
+}
+//*Icons*/
+.footer_contenedor_div__icon {
+    height: 50px;
+    width: 50px;
+}
+
+//*////////////////////////////////////////////*/
+//*Imports/////////////////////////////////////*/
+//*////////////////////////////////////////////*/
+
+@import "index";
+@import "contenido";
+@import "saga";
+@import "bethesda";
+@import "contacto";

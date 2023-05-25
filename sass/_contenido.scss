@@ -1,0 +1,104 @@
+//*Titulo-contenido*/
+.titulo-contenido {
+    color: #808080;
+    text-align: center;
+    padding: 20px;
+    font-size: 50px;
+}
+//*Grid-mapa*/
+.seccion-contenido__art-mapa {
+    display: grid;
+    grid-template-columns: 1000px 1fr;
+    grid-template-rows: 50px 470px;
+    grid-template-areas: 
+    "seccion-contenido_art-mapa__titulo-mapa seccion-contenido_art-mapa__titulo-mapa"
+    "seccion-contenido_art-mapa__p seccion-contenido_art-mapa__img"
+    ;
+    .seccion-contenido_art-mapa__titulo-mapa {
+        color: #808080;
+        padding: 0 0 5px 100px;
+        font-size: 30px;
+        grid-area: seccion-contenido_art-mapa__titulo-mapa;
+    }
+    .seccion-contenido_art-mapa__p {
+        background-color: #d3d3d3;
+        font-size: 18px;
+        border: 3px solid #808080;
+        grid-area: seccion-contenido_art-mapa__p;
+        margin: 5px 5px 5px 100px;
+        padding: 10px;
+    }
+    .seccion-contenido_art-mapa__img {
+        grid-area: seccion-contenido_art-mapa__img;
+        display: flex;
+        justify-self: center;
+        align-self: center;
+        border: 3px solid #808080;
+    }
+}
+//*Grid-clases*/
+.seccion-contenido__art-clases {
+    display: flex;
+    flex-direction: column;
+    .seccion-contenido_art-clases__titulo-clases {
+        color: #808080;
+        padding: 30px 0 5px 100px;
+        font-size: 30px;
+        grid-area: seccion-contenido_art-mapa__titulo-mapa;
+    }
+    .seccion-contenido_art-clases__p {
+        background-color: #d3d3d3;
+        margin: 0 100px 0 100px;
+        padding: 10px;
+        border: 3px solid #808080;
+        font-size: 18px;
+    }
+    .seccion-contenido_art-clases__img {
+        margin: 10px 0 10px 0;
+    }
+}
+//*Titulo-expansiones*/
+.seccion-contenido__titulo-expansiones {
+    color: #808080;
+    font-size: 50px;
+    text-align: center;
+    margin: 50px;
+}
+//*Expansiones*/
+.art-dlc {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 100px;
+    grid-template-rows: 50px 1fr 320px;
+    grid-template-areas: 
+    "titulo-dlc titulo-dlc"
+    "img-dlc p-dlc"
+    "img-dlc trailer-dlc"
+    ;
+    padding-bottom: 30px;
+    .titulo-dlc {
+        grid-area: titulo-dlc;
+        color: #808080;
+        font-size: 30px;
+        margin: 0 0 0 100px;
+        display: flex;
+        align-self: center;
+    }
+    .img-dlc {
+        grid-area: img-dlc;
+        margin: 0 0 0 100px;
+        border: 3px solid #808080;
+    }
+    .p-dlc {
+        grid-area: p-dlc;
+        background-color: #d3d3d3;
+        margin: 15px;
+        padding: 10px;
+        border: 3px solid #808080;
+    }
+    .trailer-dlc {
+        grid-area: trailer-dlc;
+        display: flex;
+        justify-self: center;
+        border: 3px solid #808080;
+    }
+}

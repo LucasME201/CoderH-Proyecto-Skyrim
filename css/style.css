@@ -1,546 +1,425 @@
-/*/////////////////////////////////////////*/
-/*Todo/////////////////////////////////////*/
-/*/////////////////////////////////////////*/
-
 * {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Merienda', cursive;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merienda", cursive;
 }
-/*Body-background*/
+
 body {
-    background-color: rgb(0, 0, 0);
+  background-color: #000000;
 }
 
-/*////////////////////////////////////////*/
-/*Cabecera-Navegador//////////////////////*/
-/*///////////////////////////////////////*/
-
-/*Display header*/
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: rgb(211, 211, 211);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #d3d3d3;
 }
-/*Display nav*/
-.header__nav {
-    align-self: center;
+header .header__nav {
+  align-self: center;
 }
-/*Display listas nav*/
-.header-nav__ul {
-    display: flex;
-    align-items: center;
+header .header__nav .header-nav__ul {
+  display: flex;
+  align-items: center;
 }
-/*Listas nav*/
-.header-nav-ul__li {
-    margin: 25px;
-    padding: 5px;
-    font-size: 23px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
+header .header__nav .header-nav-ul__li {
+  margin: 25px;
+  padding: 5px;
+  font-size: 23px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
 }
-/*Texto listas nav*/
-.header-nav-ul-li__a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    padding: 3px 5px 3px 5px;
+header .header__nav .header-nav-ul-li__a {
+  text-decoration: none;
+  color: #000000;
+  padding: 3px 5px 3px 5px;
 }
 
-/*/////////////////////////////////////////*/
-/*Pie de Pagina////////////////////////////*/
-/*////////////////////////////////////////*/
-
-/*Displat pie de pagina*/
-footer {
-    background-color: rgb(211, 211, 211);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-/*Dispaly divs*/
-footer div {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-}
-/*Icons*/
-.footer-img {
-    width: 50px;
-    height: 50px;
+.footer_contenedor__instagram {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding: 10px;
+  background-color: #d3d3d3;
 }
 
-/*//////////////////////////////////////////*/
-/*Index/////////////////////////////////////*/
-/*//////////////////////////////////////////*/
+.footer_contenedor__instagram a {
+  align-self: center;
+  padding: 5px;
+  text-decoration: none;
+  color: #000000;
+}
 
-/*Tamaño seccion*/
+.footer_contenedor__email {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #d3d3d3;
+}
+
+.footer_contenedor__email a {
+  align-self: center;
+  padding: 5px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer_contenedor__facebook {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: end;
+  padding: 10px;
+  background-color: #d3d3d3;
+}
+
+.footer_contenedor__facebook a {
+  align-self: center;
+  padding: 5px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.footer_contenedor_div__icon {
+  height: 50px;
+  width: 50px;
+}
+
 .seccion-index {
-    padding: 100px;
+  padding: 100px;
 }
-/*Grid*/
-.seccion-index__article {
-    display: grid;
-    grid-template-columns: 700px 1fr;
-    grid-template-rows: repeat(2, 1fr) 150px;
-    grid-template-areas: 
-    "seccion-index_article__img seccion-index_article__caracteristicas"
-    "seccion-index_article__img seccion-index_article__trailer"
-    "seccion-index_article__p seccion-index_article__p"
-    ;
+.seccion-index .seccion-index__article {
+  display: grid;
+  grid-template-columns: 700px 1fr;
+  grid-template-rows: repeat(2, 1fr) 150px;
+  grid-template-areas: "seccion-index_article__img seccion-index_article__caracteristicas" "seccion-index_article__img seccion-index_article__trailer" "seccion-index_article__p seccion-index_article__p";
 }
-/*img dovakhin*/
-.seccion-index_article__img {
-    grid-area: seccion-index_article__img;
-    display: flex;
-    justify-self: center;
-    margin-top: 30px;
-    border: 3px solid rgb(128, 128, 128);
+.seccion-index .seccion-index__article .seccion-index_article__img {
+  grid-area: seccion-index_article__img;
+  display: flex;
+  justify-self: center;
+  margin-top: 30px;
+  border: 3px solid #808080;
 }
-/*Caracteristicas img in-game*/
-.seccion-index_article__caracteristicas {
-    grid-area: seccion-index_article__caracteristicas;
-    background-color: rgb(211, 211, 211);
-    display: flex;
-    justify-content: space-between;
-    margin: 30px 75px 30px 75px;
-    border: 3px solid rgb(128, 128, 128);
+.seccion-index .seccion-index__article .seccion-index_article__caracteristicas {
+  grid-area: seccion-index_article__caracteristicas;
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 75px 30px 75px;
+  border: 3px solid #808080;
 }
-/*Lista caracteristicas*/
-.seccion-index_article_caracteristicas__lista {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    line-height: 50px;
+.seccion-index .seccion-index__article .seccion-index_article__caracteristicas .seccion-index_article_caracteristicas__lista {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  line-height: 50px;
 }
-/*Img in-game*/
-.seccion-index_article_caracteristicas__img {
-    margin: 10px;
-    border: 3px solid rgb(128, 128, 128);
+.seccion-index .seccion-index__article .seccion-index_article__caracteristicas .seccion-index_article_caracteristicas__img {
+  margin: 10px;
+  border: 3px solid rgb(128, 128, 128);
 }
-/*Trailer*/
-.seccion-index_article__trailer {
-    grid-area: seccion-index_article__trailer;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    border: 3px solid rgb(128, 128, 128);
+.seccion-index .seccion-index__article .seccion-index_article__trailer {
+  grid-area: seccion-index_article__trailer;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  border: 3px solid #808080;
 }
-/*Parrafo*/
-.seccion-index_article__p {
-    grid-area: seccion-index_article__p;
-    background-color: rgb(211, 211, 211);
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    border: 3px solid rgb(128, 128, 128);
-    width: 98%;
+.seccion-index .seccion-index__article .seccion-index_article__p {
+  grid-area: seccion-index_article__p;
+  background-color: #d3d3d3;
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  border: 3px solid #808080;
+  width: 98%;
 }
 
-/*///////////////////////////////////////////*/
-/*Contenido//////////////////////////////////*/
-/*///////////////////////////////////////////*/
-
-/*Titulo-contenido*/
 .titulo-contenido {
-    color: rgb(128, 128, 128);
-    text-align: center;
-    padding: 20px;
-    font-size: 50px;
+  color: #808080;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
 }
-/*Grid-mapa*/
+
 .seccion-contenido__art-mapa {
-    display: grid;
-    grid-template-columns: 1000px 1fr;
-    grid-template-rows: 50px 470px;
-    grid-template-areas: 
-    "seccion-contenido_art-mapa__titulo-mapa seccion-contenido_art-mapa__titulo-mapa"
-    "seccion-contenido_art-mapa__p seccion-contenido_art-mapa__img"
-    ;
+  display: grid;
+  grid-template-columns: 1000px 1fr;
+  grid-template-rows: 50px 470px;
+  grid-template-areas: "seccion-contenido_art-mapa__titulo-mapa seccion-contenido_art-mapa__titulo-mapa" "seccion-contenido_art-mapa__p seccion-contenido_art-mapa__img";
 }
-/*Titulo-mapa*/
-.seccion-contenido_art-mapa__titulo-mapa {
-    color: rgb(128, 128, 128);
-    padding: 0 0 5px 100px;
-    font-size: 30px;
-    grid-area: seccion-contenido_art-mapa__titulo-mapa;
+.seccion-contenido__art-mapa .seccion-contenido_art-mapa__titulo-mapa {
+  color: #808080;
+  padding: 0 0 5px 100px;
+  font-size: 30px;
+  grid-area: seccion-contenido_art-mapa__titulo-mapa;
 }
-/*Parrafo-mapa*/
-.seccion-contenido_art-mapa__p {
-    background-color: rgb(211, 211, 211);
-    font-size: 18px;
-    border: 3px solid rgb(128, 128, 128);
-    grid-area: seccion-contenido_art-mapa__p;
-    margin: 5px 5px 5px 100px;
-    padding: 10px;
+.seccion-contenido__art-mapa .seccion-contenido_art-mapa__p {
+  background-color: #d3d3d3;
+  font-size: 18px;
+  border: 3px solid #808080;
+  grid-area: seccion-contenido_art-mapa__p;
+  margin: 5px 5px 5px 100px;
+  padding: 10px;
 }
-/*Img-mapa*/
-.seccion-contenido_art-mapa__img {
-    grid-area: seccion-contenido_art-mapa__img;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    border: 3px solid rgb(128, 128, 128);
+.seccion-contenido__art-mapa .seccion-contenido_art-mapa__img {
+  grid-area: seccion-contenido_art-mapa__img;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  border: 3px solid #808080;
 }
-/*Grid-clases*/
+
 .seccion-contenido__art-clases {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-/*Titulo-clases*/
-.seccion-contenido_art-clases__titulo-clases {
-    color: rgb(128, 128, 128);
-    padding: 30px 0 5px 100px;
-    font-size: 30px;
-    grid-area: seccion-contenido_art-mapa__titulo-mapa;
+.seccion-contenido__art-clases .seccion-contenido_art-clases__titulo-clases {
+  color: #808080;
+  padding: 30px 0 5px 100px;
+  font-size: 30px;
+  grid-area: seccion-contenido_art-mapa__titulo-mapa;
 }
-/*Parrafo-clases*/
-.seccion-contenido_art-clases__p {
-    background-color: rgb(211, 211, 211);
-    margin: 0 100px 0 100px;
-    padding: 10px;
-    border: 3px solid rgb(128, 128, 128);
-    font-size: 18px;
+.seccion-contenido__art-clases .seccion-contenido_art-clases__p {
+  background-color: #d3d3d3;
+  margin: 0 100px 0 100px;
+  padding: 10px;
+  border: 3px solid #808080;
+  font-size: 18px;
 }
-/*Img-clases*/
-.seccion-contenido_art-clases__img {
-    margin: 10px 0 10px 0;
+.seccion-contenido__art-clases .seccion-contenido_art-clases__img {
+  margin: 10px 0 10px 0;
 }
-/*Titulo-expansiones*/
+
 .seccion-contenido__titulo-expansiones {
-    color: rgb(128, 128, 128);
-    font-size: 50px;
-    text-align: center;
-    margin: 50px;
-}
-/*Dragonborn*/
-.seccion-contenido__art-dragonborn {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) 100px;
-    grid-template-rows: 50px 1fr 320px;
-    grid-template-areas: 
-    "seccion-contenido_art-dragonborn__titulo-dragonborn seccion-contenido_art-dragonborn__titulo-dragonborn"
-    "seccion-contenido_art-dragonborn__img seccion-contenido_art-dragonborn__p"
-    "seccion-contenido_art-dragonborn__img seccion-contenido_art-dragonborn__trailer"
-    ;
-    margin-bottom: 30px;
-}
-/*Titulo-dragonborn*/
-.seccion-contenido_art-dragonborn__titulo-dragonborn {
-    grid-area: seccion-contenido_art-dragonborn__titulo-dragonborn;
-    color: rgb(128, 128, 128);
-    font-size: 30px;
-    margin: 0 0 0 100px;
-    display: flex;
-    align-self: center;
-}
-/*Img-dragonborn*/
-.seccion-contenido_art-dragonborn__img {
-    grid-area: seccion-contenido_art-dragonborn__img;
-    margin: 0 0 0 100px;
-    border: 3px solid rgb(128, 128, 128);
-}
-/*Parrafo-dragonborn*/
-.seccion-contenido_art-dragonborn__p {
-    grid-area: seccion-contenido_art-dragonborn__p;
-    background-color: rgb(211, 211, 211);
-    margin: 15px;
-    padding: 10px;
-    border: 3px solid rgb(128, 128, 128);
-}
-/*Trailer-dragonborn*/
-.seccion-contenido_art-dragonborn__trailer {
-    grid-area: seccion-contenido_art-dragonborn__trailer;
-    display: flex;
-    justify-self: center;
-    border: 3px solid rgb(128, 128, 128);
-}
-/*Dawnguard*/
-.seccion-contenido__art-dawnguard {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) 100px;
-    grid-template-rows: 50px 1fr 320px;
-    grid-template-areas: 
-    "seccion-contenido_art-dawnguard__titulo-dawnguard seccion-contenido_art-dawnguard__titulo-dawnguard"
-    "seccion-contenido_art-dawnguard__img seccion-contenido_art-dawnguard__p"
-    "seccion-contenido_art-dawnguard__img seccion-contenido_art-dawnguard__trailer"
-    ;
-    margin-bottom: 30px;
-}
-/*Titulo-dawnguard*/
-.seccion-contenido_art-dawnguard__titulo-dawnguard {
-    grid-area: seccion-contenido_art-dawnguard__titulo-dawnguard;
-    color: rgb(128, 128, 128);
-    font-size: 30px;
-    margin: 0 0 0 100px;
-    display: flex;
-    align-self: center;
-}
-/*Img-dawnguard*/
-.seccion-contenido_art-dawnguard__img {
-    grid-area: seccion-contenido_art-dawnguard__img;
-    margin: 0 0 0 100px;
-    border: 3px solid rgb(128, 128, 128);
-}
-/*Parrafo-dawnguard*/
-.seccion-contenido_art-dawnguard__p {
-    grid-area: seccion-contenido_art-dawnguard__p;
-    background-color: rgb(211, 211, 211);
-    margin: 15px;
-    padding: 10px;
-    border: 3px solid rgb(128, 128, 128);
-}
-/*Trailer-dawnguard*/
-.seccion-contenido_art-dawnguard__trailer {
-    grid-area: seccion-contenido_art-dawnguard__trailer;
-    display: flex;
-    justify-self: center;
-    border: 3px solid rgb(128, 128, 128);
-}
-/*Hearthfire*/
-.seccion-contenido__art-hearthfire {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) 100px;
-    grid-template-rows: 50px 1fr 320px;
-    grid-template-areas: 
-    "seccion-contenido_art-hearthfire__titulo-hearthfire seccion-contenido_art-hearthfire__titulo-hearthfire"
-    "seccion-contenido_art-hearthfire__img seccion-contenido_art-hearthfire__p"
-    "seccion-contenido_art-hearthfire__img seccion-contenido_art-hearthfire__trailer"
-    ;
-    padding-bottom: 30px;
-}
-/*Titulo-hearthfire*/
-.seccion-contenido_art-hearthfire__titulo-hearthfire {
-    grid-area: seccion-contenido_art-hearthfire__titulo-hearthfire;
-    color: rgb(128, 128, 128);
-    font-size: 30px;
-    margin: 0 0 0 100px;
-    display: flex;
-    align-self: center;
-}
-/*Img-hearthfire*/
-.seccion-contenido_art-hearthfire__img {
-    grid-area: seccion-contenido_art-hearthfire__img;
-    margin: 0 0 0 100px;
-    border: 3px solid rgb(128, 128, 128);
-}
-/*Parrafo-hearthfire*/
-.seccion-contenido_art-hearthfire__p {
-    grid-area: seccion-contenido_art-hearthfire__p;
-    background-color: rgb(211, 211, 211);
-    margin: 15px;
-    padding: 10px;
-    border: 3px solid rgb(128, 128, 128);
-}
-/*Trailer-hearthfire*/
-.seccion-contenido_art-hearthfire__trailer {
-    grid-area: seccion-contenido_art-hearthfire__trailer;
-    display: flex;
-    justify-self: center;
-    border: 3px solid rgb(128, 128, 128);
+  color: #808080;
+  font-size: 50px;
+  text-align: center;
+  margin: 50px;
 }
 
-/*///////////////////////////////////////////*/
-/*Saga///////////////////////////////////////*/
-/*///////////////////////////////////////////*/
+.art-dlc {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 100px;
+  grid-template-rows: 50px 1fr 320px;
+  grid-template-areas: "titulo-dlc titulo-dlc" "img-dlc p-dlc" "img-dlc trailer-dlc";
+  padding-bottom: 30px;
+}
+.art-dlc .titulo-dlc {
+  grid-area: titulo-dlc;
+  color: #808080;
+  font-size: 30px;
+  margin: 0 0 0 100px;
+  display: flex;
+  align-self: center;
+}
+.art-dlc .img-dlc {
+  grid-area: img-dlc;
+  margin: 0 0 0 100px;
+  border: 3px solid #808080;
+}
+.art-dlc .p-dlc {
+  grid-area: p-dlc;
+  background-color: #d3d3d3;
+  margin: 15px;
+  padding: 10px;
+  border: 3px solid #808080;
+}
+.art-dlc .trailer-dlc {
+  grid-area: trailer-dlc;
+  display: flex;
+  justify-self: center;
+  border: 3px solid #808080;
+}
 
-/*Titulo*/
 .titulo-saga {
-    color: rgb(128, 128, 128);
-    text-align: center;
-    padding: 20px;
-    font-size: 50px;
+  color: #808080;
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
 }
-/*Display*/
+
 .seccion-saga {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
-/*Articulos*/
-.art-saga {
-    display: flex;
-    margin: 10px;
+.seccion-saga .art-saga {
+  display: flex;
+  margin: 10px;
 }
-/*Parrafos*/
-.p-saga {
-    background-color: rgb(211, 211, 211);
-    padding: 10px;
-    border: solid rgb(128, 128, 128);
-    margin: 0 100px 0 20px;
+.seccion-saga .p-saga {
+  background-color: #d3d3d3;
+  padding: 10px;
+  border: solid #808080;
+  margin: 0 100px 0 20px;
 }
-/*Imagenes*/
-.img-saga {
-    margin: 0 20px 0 100px;
-    border: 3px solid rgb(128, 128, 128);
+.seccion-saga .img-saga {
+  margin: 0 20px 0 100px;
+  border: 3px solid #808080;
 }
-/*Art-oblivion*/
-.seccion-saga__oblivion {
-    padding-bottom: 20px;
+.seccion-saga .seccion-saga__oblivion {
+  padding-bottom: 20px;
 }
 
-/*///////////////////////////////////////////*/
-/*Bethesda///////////////////////////////////*/
-/*///////////////////////////////////////////*/
-
-/*tamaño-seccion*/
 .seccion-bethesda {
-    padding: 100px;
+  padding: 100px;
 }
-/*Display-grid*/
-.seccion-bethesda__art {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 350px);
-    grid-template-areas: 
-    "seccion-bethesda_art__img seccion-bethesda_art__p"
-    "seccion-bethesda_art__trailer seccion-bethesda_art__p"
-    "seccion-bethesda_art__img-juegos seccion-bethesda_art__img-juegos"
-    ;
+.seccion-bethesda .seccion-bethesda__art {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 350px);
+  grid-template-areas: "seccion-bethesda_art__img seccion-bethesda_art__p" "seccion-bethesda_art__trailer seccion-bethesda_art__p" "seccion-bethesda_art__img-juegos seccion-bethesda_art__img-juegos";
 }
-/*Img*/
-.seccion-bethesda_art__img {
-    grid-area: seccion-bethesda_art__img;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    margin: 20px;
-    border: 3px solid rgb(128, 128, 128);
+.seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__img {
+  grid-area: seccion-bethesda_art__img;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin: 20px;
+  border: 3px solid #808080;
 }
-/*Trailer*/
-.seccion-bethesda_art__trailer {
-    grid-area: seccion-bethesda_art__trailer;
-    display: flex;
-    justify-self: center;
-    margin: 20px;
-    border: 3px solid rgb(128, 128, 128);
+.seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__trailer {
+  grid-area: seccion-bethesda_art__trailer;
+  display: flex;
+  justify-self: center;
+  margin: 20px;
+  border: 3px solid #808080;
 }
-/*Parrafo*/
-.seccion-bethesda_art__p {
-    grid-area: seccion-bethesda_art__p;
-    background-color: rgb(211, 211, 211);
-    padding: 10px;
-    margin: 20px;
-    border: 3px solid rgb(128, 128, 128);
-    font-size: 18px;
+.seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__p {
+  grid-area: seccion-bethesda_art__p;
+  background-color: rgb(211, 211, 211);
+  padding: 10px;
+  margin: 20px;
+  border: 3px solid rgb(128, 128, 128);
+  font-size: 18px;
 }
-/*Img-juegos-Bethesda*/
-.seccion-bethesda_art__img-juegos {
-    grid-area: seccion-bethesda_art__img-juegos;
-    display: flex;
-    justify-self: center;
-    align-self: center;
-    margin-top: 30px;
-    border: 3px solid rgb(128, 128, 128);
+.seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__img-juegos {
+  grid-area: seccion-bethesda_art__img-juegos;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  margin-top: 30px;
+  border: 3px solid rgb(128, 128, 128);
 }
-
-/*///////////////////////////////////////////*/
-/*Contacto///////////////////////////////////*/
-/*///////////////////////////////////////////*/
 
 /*Titulo*/
 .seccion-contacto__titulo {
-    color: rgb(128, 128, 128);
-    font-size: 50px;
-    text-align: center;
-    padding: 20px;
+  color: #808080;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
 }
+
 /*Posicion-formulario*/
 .div-form {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
+
 /*Grid*/
 .seccion-contacto__formulario {
-    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-    background-color: rgb(27, 26, 26);
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 90px) 150px 90px;
-    grid-template-areas: 
-    "seccion-contacto_formulario__nombre seccion-contacto_formulario__apellido"
-    "seccion-contacto_formulario__email seccion-contacto_formulario__telefono"
-    "seccion-contacto_formulario__mensaje seccion-contacto_formulario__mensaje"
-    "seccion-contacto_formulario__si-no seccion-contacto_formulario__multi-opciones"
-    "seccion-contacto_formulario__reset seccion-contacto_formulario__enviar"
-    ;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3019607843);
+  background-color: rgb(27, 26, 26);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 90px) 150px 90px;
+  grid-template-areas: "seccion-contacto_formulario__nombre seccion-contacto_formulario__apellido" "seccion-contacto_formulario__email seccion-contacto_formulario__telefono" "seccion-contacto_formulario__mensaje seccion-contacto_formulario__mensaje" "seccion-contacto_formulario__si-no seccion-contacto_formulario__multi-opciones" "seccion-contacto_formulario__reset seccion-contacto_formulario__enviar";
 }
+
 /*Padding-formulario*/
 .seccion-contacto__formulario > * {
-    padding: 10px;
+  padding: 10px;
 }
+
 /*Espacios-relleno*/
 input,
 textarea {
-    width: 100%;
-    padding: 5px;
-    
+  width: 100%;
+  padding: 5px;
 }
+
 /*Nombre*/
 .seccion-contacto_formulario__nombre {
-    color: rgb(128, 128, 128);
-    grid-area: seccion-contacto_formulario__nombre;
+  color: #808080;
+  grid-area: seccion-contacto_formulario__nombre;
 }
+
 /*Apellido*/
 .seccion-contacto_formulario__apellido {
-    color: rgb(128, 128, 128);
-    grid-area: seccion-contacto_formulario__apellido;
+  color: #808080;
+  grid-area: seccion-contacto_formulario__apellido;
 }
+
 /*Email*/
 .seccion-contacto_formulario__email {
-    color: rgb(128, 128, 128);
-    grid-area: seccion-contacto_formulario__email;
+  color: #808080;
+  grid-area: seccion-contacto_formulario__email;
 }
+
 /*Telefono*/
 .seccion-contacto_formulario__telefono {
-    color: rgb(128, 128, 128);
-    grid-area: seccion-contacto_formulario__telefono;
+  color: #808080;
+  grid-area: seccion-contacto_formulario__telefono;
 }
+
 /*Mensaje*/
 .seccion-contacto_formulario__mensaje {
-    color: rgb(128, 128, 128);
-    grid-area: seccion-contacto_formulario__mensaje;
+  color: #808080;
+  grid-area: seccion-contacto_formulario__mensaje;
 }
+
 /*Si/No*/
 .seccion-contacto_formulario__si-no {
-    color: rgb(128, 128, 128);
-    grid-area: seccion-contacto_formulario__si-no;
-    border: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  color: #808080;
+  grid-area: seccion-contacto_formulario__si-no;
+  border: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
+
 /*Si/No--Si*/
 .seccion-contacto_formulario_si-no__si {
-    color: rgb(128, 128, 128);
+  color: #808080;
 }
+
 /*Si/No--No*/
 .seccion-contacto_formulario_si-no__no {
-    color: rgb(128, 128, 128);
+  color: #808080;
 }
+
 /*Multi-opciones*/
 .seccion-contacto_formulario__multi-opciones {
-    color: rgb(128, 128, 128);
-    grid-area: seccion-contacto_formulario__multi-opciones;
+  color: #808080;
+  grid-area: seccion-contacto_formulario__multi-opciones;
 }
+
 /*Boton-reset*/
 .seccion-contacto_formulario__reset {
-    grid-area: seccion-contacto_formulario__reset;
+  grid-area: seccion-contacto_formulario__reset;
 }
+
 /*Boton-enviar*/
 .seccion-contacto_formulario__enviar {
-    grid-area: seccion-contacto_formulario__enviar;
+  grid-area: seccion-contacto_formulario__enviar;
 }
+
 /*Posicion-pie-de-pagina*/
 .footer-contacto {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
+
 /*Body-contacto*/
 .body-contacto {
-    position: relative;
-    padding-bottom: 200px;
+  position: relative;
+  padding-bottom: 200px;
 }
+
+/*# sourceMappingURL=style.css.map */

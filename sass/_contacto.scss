@@ -1,0 +1,103 @@
+/*Titulo*/
+.seccion-contacto__titulo {
+    color: #808080;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+/*Posicion-formulario*/
+.div-form {
+    display: flex;
+    justify-content: center;
+}
+/*Grid*/
+.seccion-contacto__formulario {
+    box-shadow: 0 0 20px 0 #ffffff4d;
+    background-color: rgb(27, 26, 26);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 90px) 150px 90px;
+    grid-template-areas: 
+    "seccion-contacto_formulario__nombre seccion-contacto_formulario__apellido"
+    "seccion-contacto_formulario__email seccion-contacto_formulario__telefono"
+    "seccion-contacto_formulario__mensaje seccion-contacto_formulario__mensaje"
+    "seccion-contacto_formulario__si-no seccion-contacto_formulario__multi-opciones"
+    "seccion-contacto_formulario__reset seccion-contacto_formulario__enviar"
+    ;
+}
+/*Padding-formulario*/
+.seccion-contacto__formulario > * {
+    padding: 10px;
+}
+/*Espacios-relleno*/
+input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    
+}
+/*Nombre*/
+.seccion-contacto_formulario__nombre {
+    color: #808080;
+    grid-area: seccion-contacto_formulario__nombre;
+}
+/*Apellido*/
+.seccion-contacto_formulario__apellido {
+    color: #808080;
+    grid-area: seccion-contacto_formulario__apellido;
+}
+/*Email*/
+.seccion-contacto_formulario__email {
+    color: #808080;
+    grid-area: seccion-contacto_formulario__email;
+}
+/*Telefono*/
+.seccion-contacto_formulario__telefono {
+    color: #808080;
+    grid-area: seccion-contacto_formulario__telefono;
+}
+/*Mensaje*/
+.seccion-contacto_formulario__mensaje {
+    color: #808080;
+    grid-area: seccion-contacto_formulario__mensaje;
+}
+/*Si/No*/
+.seccion-contacto_formulario__si-no {
+    color: #808080;
+    grid-area: seccion-contacto_formulario__si-no;
+    border: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/*Si/No--Si*/
+.seccion-contacto_formulario_si-no__si {
+    color: #808080;
+}
+/*Si/No--No*/
+.seccion-contacto_formulario_si-no__no {
+    color: #808080;
+}
+/*Multi-opciones*/
+.seccion-contacto_formulario__multi-opciones {
+    color: #808080;
+    grid-area: seccion-contacto_formulario__multi-opciones;
+}
+/*Boton-reset*/
+.seccion-contacto_formulario__reset {
+    grid-area: seccion-contacto_formulario__reset;
+}
+/*Boton-enviar*/
+.seccion-contacto_formulario__enviar {
+    grid-area: seccion-contacto_formulario__enviar;
+}
+/*Posicion-pie-de-pagina*/
+.footer-contacto {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/*Body-contacto*/
+.body-contacto {
+    position: relative;
+    padding-bottom: 200px;
+}
