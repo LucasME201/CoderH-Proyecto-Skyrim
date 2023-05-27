@@ -105,6 +105,12 @@ li a.activ, li a:hover {
     .header_nav_a__img-nav {
         width: 300px;
     }
+}
+@media (max-width:401px) {
+    .header_nav_a__img-nav {
+        width: 200px;
+        
+    }
 }    
 //*/////////////////////////////////////////*/
 //*Pie de Pagina////////////////////////////*/

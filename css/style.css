@@ -105,6 +105,11 @@ li a.activ, li a:hover {
     width: 300px;
   }
 }
+@media (max-width: 401px) {
+  .header_nav_a__img-nav {
+    width: 200px;
+  }
+}
 .footer_contenedor__instagram {
   display: flex;
   flex-direction: row;
