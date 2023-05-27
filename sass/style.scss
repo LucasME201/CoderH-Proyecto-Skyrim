@@ -91,6 +91,20 @@ li a.activ, li a:hover {
     .header_nav__ul li a {
         font-size: 20px;
     }
+}
+@media (max-width:655px) {
+    .header_nav_a__img-nav {
+        width: 400px;
+    }
+    .header_nav__checkbtn {
+        font-size: 50px;
+        margin-right: 30px;
+    }
+}
+@media (max-width:501px) {
+    .header_nav_a__img-nav {
+        width: 300px;
+    }
 }    
 //*/////////////////////////////////////////*/
 //*Pie de Pagina////////////////////////////*/
