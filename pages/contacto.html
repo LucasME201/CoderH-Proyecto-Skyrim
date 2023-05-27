@@ -16,14 +16,20 @@
     <body class="body-contacto">
         <!--Cabecera/Navegador-->
         <header>
-            <img class="header__img" src="../images/elder-scroll-skyrim-nav-2.jpg" alt="img-header">
             <nav class="header__nav">
-                <ul class="header-nav__ul">
-                    <li class="header-nav-ul__li"><a class="header-nav-ul-li__a" href="../index.html">Inicio</a></li>
-                    <li class="header-nav-ul__li"><a class="header-nav-ul-li__a" href="./contenido.html">Contenido</a></li>
-                    <li class="header-nav-ul__li"><a class="header-nav-ul-li__a" href="./saga.html">Saga</a></li>
-                    <li class="header-nav-ul__li"><a class="header-nav-ul-li__a" href="./bethesda.html">Bethesda</a></li>
-                    <li class="header-nav-ul__li"><a class="header-nav-ul-li__a" href="#">Contacto</a></li>
+                <input type="checkbox" id="check">
+                <label for="check" class="header_nav__checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <a href="../index.html" class="header_nav__a">
+                    <img src="../images/elder-scroll-skyrim-nav-2.jpg" alt="img-nav" class="header_nav_a__img-nav">
+                </a>
+                <ul class="header_nav__ul">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="./contenido.html">Contenido</a></li>
+                    <li><a href="./saga.html">Saga</a></li>
+                    <li><a href="./bethesda.html">Bethesda</a></li>
+                    <li><a class="activ" href="#">Contacto</a></li>
                 </ul>
             </nav>
         </header>
