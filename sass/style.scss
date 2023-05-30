@@ -84,6 +84,8 @@ li a.activ, li a:hover {
         top: 170px;
         flex-direction: column;
         padding: 0;
+        left: -100%;
+        transition: all .5s;
     }
     .header_nav__ul li {
         text-align: center;
@@ -91,6 +93,9 @@ li a.activ, li a:hover {
     }
     .header_nav__ul li a {
         font-size: 20px;
+    }
+    #check:checked ~ .header_nav__ul {
+        left: 0;
     }
 }
 @media (max-width:655px) {
@@ -115,6 +120,12 @@ li a.activ, li a:hover {
 @media (max-width:301px) {
     .header_nav_a__img-nav {
         width: 100px;
+    }
+    .header_nav__ul li a {
+        font-size: 16px;
+    }
+    .header_nav__checkbtn {
+        font-size: 35px;
     }
 }
 //*/////////////////////////////////////////*/
