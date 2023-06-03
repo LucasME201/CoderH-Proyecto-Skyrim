@@ -1,16 +1,16 @@
-/*Titulo*/
+//*Titulo*/
 .seccion-contacto__titulo {
     color: #808080;
     font-size: 50px;
     text-align: center;
     padding: 20px;
 }
-/*Posicion-formulario*/
+//*Posicion-formulario*/
 .div-form {
     display: flex;
     justify-content: center;
 }
-/*Grid*/
+//*Grid*/
 .seccion-contacto__formulario {
     box-shadow: 0 0 20px 0 #ffffff4d;
     background-color: rgb(27, 26, 26);
@@ -25,18 +25,18 @@
     "seccion-contacto_formulario__reset seccion-contacto_formulario__enviar"
     ;
 }
-/*Padding-formulario*/
+//*Padding-formulario*/
 .seccion-contacto__formulario > * {
     padding: 10px;
 }
-/*Espacios-relleno*/
+//*Espacios-relleno*/
 input,
 textarea {
     width: 100%;
     padding: 5px;
     
 }
-/*Nombre*/
+//*Nombre*/
 .seccion-contacto_formulario__nombre {
     color: #808080;
     grid-area: seccion-contacto_formulario__nombre;
@@ -46,22 +46,22 @@ textarea {
     color: #808080;
     grid-area: seccion-contacto_formulario__apellido;
 }
-/*Email*/
+//*Email*/
 .seccion-contacto_formulario__email {
     color: #808080;
     grid-area: seccion-contacto_formulario__email;
 }
-/*Telefono*/
+//*Telefono*/
 .seccion-contacto_formulario__telefono {
     color: #808080;
     grid-area: seccion-contacto_formulario__telefono;
 }
-/*Mensaje*/
+//*Mensaje*/
 .seccion-contacto_formulario__mensaje {
     color: #808080;
     grid-area: seccion-contacto_formulario__mensaje;
 }
-/*Si/No*/
+//*Si/No*/
 .seccion-contacto_formulario__si-no {
     color: #808080;
     grid-area: seccion-contacto_formulario__si-no;
@@ -69,35 +69,41 @@ textarea {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-/*Si/No--Si*/
+//*Si/No--Si*/
 .seccion-contacto_formulario_si-no__si {
     color: #808080;
 }
-/*Si/No--No*/
+//*Si/No--No*/
 .seccion-contacto_formulario_si-no__no {
     color: #808080;
 }
-/*Multi-opciones*/
+//*Multi-opciones*/
 .seccion-contacto_formulario__multi-opciones {
     color: #808080;
     grid-area: seccion-contacto_formulario__multi-opciones;
 }
-/*Boton-reset*/
+//*Boton-reset*/
 .seccion-contacto_formulario__reset {
     grid-area: seccion-contacto_formulario__reset;
 }
-/*Boton-enviar*/
+//*Boton-enviar*/
 .seccion-contacto_formulario__enviar {
     grid-area: seccion-contacto_formulario__enviar;
 }
-/*Posicion-pie-de-pagina*/
+//*Posicion-pie-de-pagina*/
 .footer-contacto {
     position: absolute;
     bottom: 0;
     width: 100%;
 }
-/*Body-contacto*/
+//*Body-contacto*/
 .body-contacto {
     position: relative;
     padding-bottom: 200px;
+}
+//*Pie pagina*/
+.pie-pagina {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
