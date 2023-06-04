@@ -2,7 +2,8 @@
 .titulo-saga {
     color: #808080;
     text-align: center;
-    padding: 20px;
+    padding: 50px;
+    margin-bottom: 0;
     font-size: 50px;
 }
 //*Display*/
@@ -10,21 +11,96 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    //Art-saga
     .art-saga {
         display: flex;
-        margin: 10px;
+        gap: 30px;
+        margin: 15px 100px 15px 100px;
     }
+    //Parrafo saga
     .p-saga {
         background-color: #d3d3d3;
         padding: 10px;
+        width: 100%;
+        margin-bottom: 0;
         border: solid #808080;
-        margin: 0 100px 0 20px;
+        border-radius: 3px;
+        text-align: justify;
+        height: fit-content;
+        align-self: center;
     }
+    //Imagenes saga
     .img-saga {
-        margin: 0 20px 0 100px;
         border: 3px solid #808080;
+        border-radius: 3px;
     }
+    //Art-Oblivion
     .seccion-saga__oblivion {
         padding-bottom: 20px;
+    }
+}
+//Responsive////////////////////////////////////////////////////////
+@media (max-width:1282px) {
+    //*Display*/
+    .seccion-saga {
+        //Art-saga
+        .art-saga {
+            display: flex;
+            flex-direction: column;
+        }
+        //Imagenes saga
+        .img-saga {
+            width: 800px;
+            height: 500px;
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width:999px) {
+    //*Display*/
+    .seccion-saga {
+        //Art-saga
+        .art-saga {
+            margin: 0 50px 0px 50px;
+            padding-bottom: 20px;
+        }
+        //Imagenes saga
+        .img-saga {
+            width: 500px;
+            height: 350px;
+        }
+    }
+}
+@media (max-width:599px) {
+    //*Display*/
+    .seccion-saga {
+       //img-saga
+       .img-saga {
+            width: 350px;
+            height: 200px;
+        }
+        //Parrafo saga
+        .p-saga {
+            font-size: 14px;
+        } 
+    }
+}
+@media (max-width:449px) {
+    //*Titulo*/
+    .titulo-saga {
+        font-size: 40px;
+        padding: 30px;
+    }
+    //*Display*/
+    .seccion-saga {
+        //Art-saga
+        .art-saga {
+            margin: 0 10px 0 10px;
+        }
+        //img-saga
+        .img-saga {
+            width: 280px;
+            height: 150px;
+        }
     }
 }

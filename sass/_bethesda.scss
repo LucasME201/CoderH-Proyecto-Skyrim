@@ -1,45 +1,147 @@
 //*Bethesda*/
 .seccion-bethesda {
-    padding: 100px;
+    //Art-bethesda
     .seccion-bethesda__art {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 350px);
+        grid-template-rows: 290px 320px 500px;
         grid-template-areas: 
         "seccion-bethesda_art__img seccion-bethesda_art__p"
         "seccion-bethesda_art__trailer seccion-bethesda_art__p"
         "seccion-bethesda_art__img-juegos seccion-bethesda_art__img-juegos"
         ;
+        gap: 10px;
+        margin: 50px 100px 50px 100px;
+        //Img Bethesda
         .seccion-bethesda_art__img {
             grid-area: seccion-bethesda_art__img;
             display: flex;
-            justify-self: center;
             align-self: center;
-            margin: 20px;
             border: 3px solid #808080;
+            border-radius: 3px;
         }
+        //Trailer
         .seccion-bethesda_art__trailer {
             grid-area: seccion-bethesda_art__trailer;
             display: flex;
-            justify-self: center;
-            margin: 20px;
+            align-self: center;
             border: 3px solid #808080;
+            border-radius: 3px;
         }
+        //Parrafo
         .seccion-bethesda_art__p {
             grid-area: seccion-bethesda_art__p;
-            background-color: rgb(211, 211, 211);
+            background-color: #d3d3d3;
             padding: 10px;
-            margin: 20px;
-            border: 3px solid rgb(128, 128, 128);
+            border: 3px solid #808080;
+            border-radius: 3px;
             font-size: 18px;
+            height: fit-content;
+            margin: 0;
+            align-self: center;
+            text-align: justify;
         }
+        //Img Juegos
         .seccion-bethesda_art__img-juegos {
             grid-area: seccion-bethesda_art__img-juegos;
             display: flex;
             justify-self: center;
             align-self: center;
-            margin-top: 30px;
-            border: 3px solid rgb(128, 128, 128);
+            border: 3px solid #808080;
+            border-radius: 3px;
+            width: 100%;
+        }
+    }
+}
+//Responsive////////////////////////////////////////////////////////
+@media (max-width:1249px) {
+    //*Bethesda*/
+    .seccion-bethesda {
+        //Art Bethesda
+        .seccion-bethesda__art {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 240px 1fr 290px;
+            grid-template-areas: 
+            "seccion-bethesda_art__img seccion-bethesda_art__trailer"
+            "seccion-bethesda_art__p seccion-bethesda_art__p"
+            "seccion-bethesda_art__img-juegos seccion-bethesda_art__img-juegos"
+            ;
+            //Img Bethesda
+            .seccion-bethesda_art__img {
+                width: 400px;
+                height: 230px;
+                justify-self: center;
+            }
+            //Trailer
+            .seccion-bethesda_art__trailer {
+                width: 400px;
+                height: 230px;
+                justify-self: center;
+            }
+        }
+    }
+}
+@media (max-width:999px) {
+    //*Bethesda*/
+    .seccion-bethesda {
+        //Art Bethesda
+        .seccion-bethesda__art {
+            display: flex;
+            flex-direction: column;
+            margin: 50px;
+            //Img Bethesda
+            .seccion-bethesda_art__img {
+                width: 550px;
+                height: 325px;
+            }
+            //Trailer
+            .seccion-bethesda_art__trailer {
+                width: 550px;
+                height: 325px;
+            }
+        }
+    }
+}
+@media (max-width:649px) {
+    //*Bethesda*/
+    .seccion-bethesda {
+        //Art Bethesda
+        .seccion-bethesda__art {
+            margin: 25px;
+            //Img Bethesda
+            .seccion-bethesda_art__img {
+                width: 400px;
+                height: 230px;
+            }
+            //Trailer
+            .seccion-bethesda_art__trailer {
+                width: 400px;
+                height: 230px;
+            }
+            //Parrafo
+            .seccion-bethesda_art__p {
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width:449px) {
+    //*Bethesda*/
+    .seccion-bethesda {
+        //Art Bethesda
+        .seccion-bethesda__art {
+            margin: 10px;
+            //Img Bethesda
+            .seccion-bethesda_art__img {
+                width: 280px;
+                height: 150px;
+            }
+            //Trailer
+            .seccion-bethesda_art__trailer {
+                width: 280px;
+                height: 150px;
+            }
         }
     }
 }

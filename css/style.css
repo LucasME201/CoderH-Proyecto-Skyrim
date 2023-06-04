@@ -141,6 +141,7 @@ li a.activ, li a:hover {
   justify-self: center;
   margin-top: 0px;
   border: 3px solid #808080;
+  border-radius: 3px;
 }
 
 .seccion-index_article__caracteristicas {
@@ -150,6 +151,7 @@ li a.activ, li a:hover {
   justify-content: space-evenly;
   margin: 0px 75px 10px 75px;
   border: 3px solid #808080;
+  border-radius: 3px;
 }
 
 .seccion-index_article_caracteristicas__lista {
@@ -163,6 +165,8 @@ li a.activ, li a:hover {
 
 .seccion-index_article_caracteristicas__img {
   margin: 10px;
+  border: 3px solid #808080;
+  border-radius: 3px;
 }
 
 .seccion-index_article__trailer {
@@ -171,6 +175,7 @@ li a.activ, li a:hover {
   justify-self: center;
   align-self: center;
   border: 3px solid #808080;
+  border-radius: 3px;
 }
 
 .seccion-index_article__p {
@@ -180,6 +185,7 @@ li a.activ, li a:hover {
   margin-top: 10px;
   justify-self: center;
   border: 3px solid #808080;
+  border-radius: 3px;
   width: 100%;
   padding: 10px;
 }
@@ -333,6 +339,7 @@ li a.activ, li a:hover {
   background-color: #d3d3d3;
   font-size: 18px;
   border: 3px solid #808080;
+  border-radius: 3px;
   grid-area: seccion-contenido_art-mapa__p;
   padding: 10px;
   margin-bottom: 0;
@@ -368,6 +375,7 @@ li a.activ, li a:hover {
   background-color: #d3d3d3;
   padding: 10px;
   border: 3px solid #808080;
+  border-radius: 3px;
   font-size: 18px;
 }
 
@@ -400,6 +408,7 @@ li a.activ, li a:hover {
 .art-dlc .img-dlc {
   grid-area: img-dlc;
   border: 3px solid #808080;
+  border-radius: 3px;
   align-self: center;
 }
 .art-dlc .p-dlc {
@@ -408,6 +417,7 @@ li a.activ, li a:hover {
   margin-bottom: 15px;
   padding: 10px;
   border: 3px solid #808080;
+  border-radius: 3px;
   font-size: 18px;
   height: fit-content;
   align-self: center;
@@ -419,6 +429,7 @@ li a.activ, li a:hover {
   justify-self: center;
   align-self: center;
   border: 3px solid #808080;
+  border-radius: 3px;
 }
 
 @media (max-width: 1642px) {
@@ -559,7 +570,8 @@ li a.activ, li a:hover {
 .titulo-saga {
   color: #808080;
   text-align: center;
-  padding: 20px;
+  padding: 50px;
+  margin-bottom: 0;
   font-size: 50px;
 }
 
@@ -570,68 +582,182 @@ li a.activ, li a:hover {
 }
 .seccion-saga .art-saga {
   display: flex;
-  margin: 10px;
+  gap: 30px;
+  margin: 15px 100px 15px 100px;
 }
 .seccion-saga .p-saga {
   background-color: #d3d3d3;
   padding: 10px;
+  width: 100%;
+  margin-bottom: 0;
   border: solid #808080;
-  margin: 0 100px 0 20px;
+  border-radius: 3px;
+  text-align: justify;
+  height: fit-content;
+  align-self: center;
 }
 .seccion-saga .img-saga {
-  margin: 0 20px 0 100px;
   border: 3px solid #808080;
+  border-radius: 3px;
 }
 .seccion-saga .seccion-saga__oblivion {
   padding-bottom: 20px;
 }
 
-.seccion-bethesda {
-  padding: 100px;
+@media (max-width: 1282px) {
+  .seccion-saga .art-saga {
+    display: flex;
+    flex-direction: column;
+  }
+  .seccion-saga .img-saga {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 999px) {
+  .seccion-saga .art-saga {
+    margin: 0 50px 0px 50px;
+    padding-bottom: 20px;
+  }
+  .seccion-saga .img-saga {
+    width: 500px;
+    height: 350px;
+  }
+}
+@media (max-width: 599px) {
+  .seccion-saga .img-saga {
+    width: 350px;
+    height: 200px;
+  }
+  .seccion-saga .p-saga {
+    font-size: 14px;
+  }
+}
+@media (max-width: 449px) {
+  .titulo-saga {
+    font-size: 40px;
+    padding: 30px;
+  }
+  .seccion-saga .art-saga {
+    margin: 0 10px 0 10px;
+  }
+  .seccion-saga .img-saga {
+    width: 280px;
+    height: 150px;
+  }
 }
 .seccion-bethesda .seccion-bethesda__art {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 350px);
+  grid-template-rows: 290px 320px 500px;
   grid-template-areas: "seccion-bethesda_art__img seccion-bethesda_art__p" "seccion-bethesda_art__trailer seccion-bethesda_art__p" "seccion-bethesda_art__img-juegos seccion-bethesda_art__img-juegos";
+  gap: 10px;
+  margin: 50px 100px 50px 100px;
 }
 .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__img {
   grid-area: seccion-bethesda_art__img;
   display: flex;
-  justify-self: center;
   align-self: center;
-  margin: 20px;
   border: 3px solid #808080;
+  border-radius: 3px;
 }
 .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__trailer {
   grid-area: seccion-bethesda_art__trailer;
   display: flex;
-  justify-self: center;
-  margin: 20px;
+  align-self: center;
   border: 3px solid #808080;
+  border-radius: 3px;
 }
 .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__p {
   grid-area: seccion-bethesda_art__p;
-  background-color: rgb(211, 211, 211);
+  background-color: #d3d3d3;
   padding: 10px;
-  margin: 20px;
-  border: 3px solid rgb(128, 128, 128);
+  border: 3px solid #808080;
+  border-radius: 3px;
   font-size: 18px;
+  height: fit-content;
+  margin: 0;
+  align-self: center;
+  text-align: justify;
 }
 .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__img-juegos {
   grid-area: seccion-bethesda_art__img-juegos;
   display: flex;
   justify-self: center;
   align-self: center;
-  margin-top: 30px;
-  border: 3px solid rgb(128, 128, 128);
+  border: 3px solid #808080;
+  border-radius: 3px;
+  width: 100%;
 }
 
+@media (max-width: 1249px) {
+  .seccion-bethesda .seccion-bethesda__art {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 240px 1fr 290px;
+    grid-template-areas: "seccion-bethesda_art__img seccion-bethesda_art__trailer" "seccion-bethesda_art__p seccion-bethesda_art__p" "seccion-bethesda_art__img-juegos seccion-bethesda_art__img-juegos";
+  }
+  .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__img {
+    width: 400px;
+    height: 230px;
+    justify-self: center;
+  }
+  .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__trailer {
+    width: 400px;
+    height: 230px;
+    justify-self: center;
+  }
+}
+@media (max-width: 999px) {
+  .seccion-bethesda .seccion-bethesda__art {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+  }
+  .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__img {
+    width: 550px;
+    height: 325px;
+  }
+  .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__trailer {
+    width: 550px;
+    height: 325px;
+  }
+}
+@media (max-width: 649px) {
+  .seccion-bethesda .seccion-bethesda__art {
+    margin: 25px;
+  }
+  .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__img {
+    width: 400px;
+    height: 230px;
+  }
+  .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__trailer {
+    width: 400px;
+    height: 230px;
+  }
+  .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__p {
+    font-size: 14px;
+  }
+}
+@media (max-width: 449px) {
+  .seccion-bethesda .seccion-bethesda__art {
+    margin: 10px;
+  }
+  .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__img {
+    width: 280px;
+    height: 150px;
+  }
+  .seccion-bethesda .seccion-bethesda__art .seccion-bethesda_art__trailer {
+    width: 280px;
+    height: 150px;
+  }
+}
 .seccion-contacto__titulo {
   color: #808080;
   font-size: 50px;
   text-align: center;
-  padding: 20px;
+  padding: 40px;
 }
 
 .div-form {
