@@ -127,6 +127,13 @@ li a.activ, li a:hover {
     font-size: 35px;
   }
 }
+.titulo-index {
+  color: #808080;
+  text-align: center;
+  padding-top: 40px;
+  font-size: 50px;
+}
+
 .seccion-index__article {
   display: grid;
   grid-template-columns: 600px 1fr;
@@ -313,6 +320,14 @@ li a.activ, li a:hover {
   .seccion-index_article__p {
     font-size: 14px;
     width: 300px;
+  }
+}
+@media (max-width: 425px) {
+  .titulo-index {
+    font-size: 40px;
+  }
+  .seccion-index_article_caracteristicas__lista {
+    line-height: 40px;
   }
 }
 .titulo-contenido {
@@ -647,6 +662,13 @@ li a.activ, li a:hover {
     height: 150px;
   }
 }
+.titulo-bethesda {
+  color: #808080;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 50px;
+}
+
 .seccion-bethesda .seccion-bethesda__art {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -753,6 +775,11 @@ li a.activ, li a:hover {
     height: 150px;
   }
 }
+@media (max-width: 425px) {
+  .titulo-bethesda {
+    font-size: 40px;
+  }
+}
 .seccion-contacto__titulo {
   color: #808080;
   font-size: 50px;
@@ -763,6 +790,7 @@ li a.activ, li a:hover {
 .div-form {
   display: flex;
   justify-content: center;
+  margin: 0 20px 0 20px;
 }
 
 .seccion-contacto__formulario {
@@ -771,7 +799,7 @@ li a.activ, li a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 90px) 150px 90px;
-  grid-template-areas: "seccion-contacto_formulario__nombre seccion-contacto_formulario__apellido" "seccion-contacto_formulario__email seccion-contacto_formulario__telefono" "seccion-contacto_formulario__mensaje seccion-contacto_formulario__mensaje" "seccion-contacto_formulario__si-no seccion-contacto_formulario__multi-opciones" "seccion-contacto_formulario__reset seccion-contacto_formulario__enviar";
+  grid-template-areas: "seccion-contacto_formulario__nombre seccion-contacto_formulario__apellido" "seccion-contacto_formulario__email seccion-contacto_formulario__telefono" "seccion-contacto_formulario__mensaje seccion-contacto_formulario__mensaje" "seccion-contacto_formulario__radio seccion-contacto_formulario__multi-opciones" "seccion-contacto_formulario__reset seccion-contacto_formulario__enviar";
 }
 
 .seccion-contacto__formulario > * {
@@ -810,19 +838,10 @@ textarea {
   grid-area: seccion-contacto_formulario__mensaje;
 }
 
-.seccion-contacto_formulario__si-no {
-  color: #808080;
-  grid-area: seccion-contacto_formulario__si-no;
-  border: none;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+.seccion-contacto_formulario__radio {
+  grid-area: seccion-contacto_formulario__radio;
 }
-
-.seccion-contacto_formulario_si-no__si {
-  color: #808080;
-}
-
-.seccion-contacto_formulario_si-no__no {
+.seccion-contacto_formulario__radio .seccion-contacto_formulario_radio__label {
   color: #808080;
 }
 
@@ -854,6 +873,12 @@ textarea {
   position: absolute;
   bottom: 0;
   width: 100%;
+}
+
+@media (max-width: 425px) {
+  .seccion-contacto__titulo {
+    font-size: 40px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -9,6 +9,7 @@
 .div-form {
     display: flex;
     justify-content: center;
+    margin: 0 20px 0 20px;
 }
 //*Grid*/
 .seccion-contacto__formulario {
@@ -21,7 +22,7 @@
     "seccion-contacto_formulario__nombre seccion-contacto_formulario__apellido"
     "seccion-contacto_formulario__email seccion-contacto_formulario__telefono"
     "seccion-contacto_formulario__mensaje seccion-contacto_formulario__mensaje"
-    "seccion-contacto_formulario__si-no seccion-contacto_formulario__multi-opciones"
+    "seccion-contacto_formulario__radio seccion-contacto_formulario__multi-opciones"
     "seccion-contacto_formulario__reset seccion-contacto_formulario__enviar"
     ;
 }
@@ -61,21 +62,13 @@ textarea {
     color: #808080;
     grid-area: seccion-contacto_formulario__mensaje;
 }
-//*Si/No*/
-.seccion-contacto_formulario__si-no {
-    color: #808080;
-    grid-area: seccion-contacto_formulario__si-no;
-    border: none;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-//*Si/No--Si*/
-.seccion-contacto_formulario_si-no__si {
-    color: #808080;
-}
-//*Si/No--No*/
-.seccion-contacto_formulario_si-no__no {
-    color: #808080;
+//*Radio*/
+.seccion-contacto_formulario__radio {
+    grid-area: seccion-contacto_formulario__radio;
+    //¿Jugaste Skyrim?
+    .seccion-contacto_formulario_radio__label {
+        color: #808080;
+    }
 }
 //*Multi-opciones*/
 .seccion-contacto_formulario__multi-opciones {
@@ -106,4 +99,11 @@ textarea {
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+//Responsive//////////////////////////////////////////
+@media (max-width:425px) {
+    //*Titulo*/
+    .seccion-contacto__titulo {
+        font-size: 40px;
+    }
 }

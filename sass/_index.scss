@@ -1,4 +1,11 @@
 //*Index*//////////////////////////////////////////////////////////////////////
+//Titulo
+.titulo-index {
+    color: #808080;
+    text-align: center;
+    padding-top: 40px;
+    font-size: 50px;
+}
 .seccion-index__article {
     display: grid;
     grid-template-columns: 600px 1fr;
@@ -221,5 +228,14 @@
     .seccion-index_article__p {
         font-size: 14px;
         width: 300px;
+    }
+}
+@media (max-width:425px) {
+    .titulo-index {
+        font-size: 40px;
+    }
+    //Art caracteristicas lista
+    .seccion-index_article_caracteristicas__lista {
+        line-height: 40px;
     }
 }

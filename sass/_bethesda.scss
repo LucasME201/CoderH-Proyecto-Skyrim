@@ -1,4 +1,11 @@
 //*Bethesda*/
+//Titulo bethesda
+.titulo-bethesda {
+    color: #808080;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;
+}
 .seccion-bethesda {
     //Art-bethesda
     .seccion-bethesda__art {
@@ -144,4 +151,10 @@
             }
         }
     }
+}
+@media (max-width:425px) {
+    //Titulo bethesda
+    .titulo-bethesda {
+        font-size: 40px;
+    } 
 }
