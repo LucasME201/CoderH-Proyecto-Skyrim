@@ -6,6 +6,7 @@
     padding-top: 40px;
     font-size: 50px;
 }
+//Art
 .seccion-index__article {
     display: grid;
     grid-template-columns: 600px 1fr;
@@ -15,7 +16,7 @@
     "seccion-index_article__img seccion-index_article__trailer"
     "seccion-index_article__p seccion-index_article__p"
     ;
-    margin: 100px;
+    margin: 50px 100px 20px 100px;
 }
 //Imagen dovakhin
 .seccion-index_article__img {
@@ -67,13 +68,17 @@
     display: flex;
     margin-top: 10px;
     justify-self: center;
+    align-self: center;
     border: 3px solid #808080;
     border-radius: 3px;
     width: 100%;
+    height: fit-content;
     padding: 10px;
+    margin: 0;
 }
 //*Responsive*//////////////////////////////////////////////////////////////
 @media (max-width:1718px) {
+    //Art
     .seccion-index__article {
         display: grid;
         grid-template-columns: 600px 1fr;
@@ -86,12 +91,15 @@
         ;
         margin: 50px;
     }
+    //Carecteristicas
     .seccion-index_article__caracteristicas {
         flex-direction: column;
     }
+    //Caracteristicas lista
     .seccion-index_article_caracteristicas__lista {
         padding: 0;
     }
+    //Caracteristicas img
     .seccion-index_article_caracteristicas__img {
         height: 300px;
         width: 500px;
@@ -100,10 +108,11 @@
 
 }
 @media (max-width:1509px) {
+    //Art
     .seccion-index__article {
         display: grid;
         grid-template-columns: 600px 1fr;
-        grid-template-rows: repeat(2, 1fr) 370px 250px;
+        grid-template-rows: repeat(2, 1fr) 340px 1fr;
         grid-template-areas: 
         "seccion-index_article__img seccion-index_article__caracteristicas"
         "seccion-index_article__img seccion-index_article__caracteristicas"
@@ -112,12 +121,14 @@
         ;
         margin: 50px;
     }
+    //Caracteristicas
     .seccion-index_article__caracteristicas {
         margin: 25px;
     }
     
 }
 @media (max-width:1390px) {
+    //Art
     .seccion-index__article {
         display: grid;
         grid-template-columns: 450px 1fr;
@@ -129,6 +140,7 @@
         "seccion-index_article__p seccion-index_article__p"
         ;
     }
+    //Caracteristicas img
     .seccion-index_article__img {
         width: 376px;
         height: 576px;
@@ -136,6 +148,7 @@
     }
 }
 @media (max-width:1122px) {
+    //Art
     .seccion-index__article {
         display: grid;
         grid-template-columns: 350px 1fr;
@@ -148,39 +161,46 @@
         ;
         margin: 20px;
     }
+    //Img dovakhin
     .seccion-index_article__img {
         width: 300px;
         height: 500px;
     }
 }
 @media (max-width:966px) {
+    //Cracteristicas img
     .seccion-index_article_caracteristicas__img {
         width: 400px;
         height: 300px;
     }
 }
 @media (max-width:866px) {
+    //Art
     .seccion-index__article {
         display: grid;
         grid-template-columns: 410px 1fr ;
-        grid-template-rows: repeat(2, 600px) 370px 400px;
+        grid-template-rows: repeat(2, 600px) repeat(2, 1fr);
         grid-template-areas: 
         "seccion-index_article__img seccion-index_article__img"
         "seccion-index_article__caracteristicas seccion-index_article__caracteristicas"
         "seccion-index_article__trailer seccion-index_article__trailer"
         "seccion-index_article__p seccion-index_article__p"
         ;
+        gap: 10px;
     }
+    //Img dovakhin
     .seccion-index_article__img {
         width: 400px;
         height: 590px;
     }
+    //Caracteristicas
     .seccion-index_article__caracteristicas {
         justify-content: space-evenly;
         width: 430px;
         margin: 0 auto;
         margin-top: 20px;
     }
+    //Caracteristicas img
     .seccion-index_article_caracteristicas__img {
         height: 230px;
         align-self: center;
@@ -188,19 +208,22 @@
     }
 }
 @media (max-width:601px) {
+    //Art
     .seccion-index__article {
         margin: 10px;
     }
+    //Trailer
     .seccion-index_article__trailer {
         width: 350px;
         height: 200px;
     }
 }
 @media (max-width:495px) {
+    //Art
     .seccion-index__article {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 550px) 250px 600px;
+        grid-template-rows: repeat(2, 550px) repeat(2, 1fr);
         grid-template-areas: 
         "seccion-index_article__img"
         "seccion-index_article__caracteristicas"
@@ -208,29 +231,36 @@
         "seccion-index_article__p"
         ;
     }
+    //Img dovakhin
     .seccion-index_article__img {
         width: 300px;
         height: 450px;
     }
+    //Caracteristicas
     .seccion-index_article__caracteristicas {
         width: 300px;
     }
+    //Caracteristicas lista
     .seccion-index_article_caracteristicas__lista {
         font-size: 14px;
     }
+    //Caracteristicas img
     .seccion-index_article_caracteristicas__img {
         width: 270px;
         height: 200px;
     }
+    //Trailer
     .seccion-index_article__trailer {
         width: 300px;
     }
+    //Parrafo
     .seccion-index_article__p {
         font-size: 14px;
         width: 300px;
     }
 }
 @media (max-width:425px) {
+    //Titulo
     .titulo-index {
         font-size: 40px;
     }

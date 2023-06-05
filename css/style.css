@@ -139,7 +139,7 @@ li a.activ, li a:hover {
   grid-template-columns: 600px 1fr;
   grid-template-rows: repeat(2, 1fr) 150px;
   grid-template-areas: "seccion-index_article__img seccion-index_article__caracteristicas" "seccion-index_article__img seccion-index_article__trailer" "seccion-index_article__p seccion-index_article__p";
-  margin: 100px;
+  margin: 50px 100px 20px 100px;
 }
 
 .seccion-index_article__img {
@@ -191,10 +191,13 @@ li a.activ, li a:hover {
   display: flex;
   margin-top: 10px;
   justify-self: center;
+  align-self: center;
   border: 3px solid #808080;
   border-radius: 3px;
   width: 100%;
+  height: fit-content;
   padding: 10px;
+  margin: 0;
 }
 
 @media (max-width: 1718px) {
@@ -221,7 +224,7 @@ li a.activ, li a:hover {
   .seccion-index__article {
     display: grid;
     grid-template-columns: 600px 1fr;
-    grid-template-rows: repeat(2, 1fr) 370px 250px;
+    grid-template-rows: repeat(2, 1fr) 340px 1fr;
     grid-template-areas: "seccion-index_article__img seccion-index_article__caracteristicas" "seccion-index_article__img seccion-index_article__caracteristicas" "seccion-index_article__trailer seccion-index_article__trailer" "seccion-index_article__p seccion-index_article__p";
     margin: 50px;
   }
@@ -265,8 +268,9 @@ li a.activ, li a:hover {
   .seccion-index__article {
     display: grid;
     grid-template-columns: 410px 1fr;
-    grid-template-rows: repeat(2, 600px) 370px 400px;
+    grid-template-rows: repeat(2, 600px) repeat(2, 1fr);
     grid-template-areas: "seccion-index_article__img seccion-index_article__img" "seccion-index_article__caracteristicas seccion-index_article__caracteristicas" "seccion-index_article__trailer seccion-index_article__trailer" "seccion-index_article__p seccion-index_article__p";
+    gap: 10px;
   }
   .seccion-index_article__img {
     width: 400px;
@@ -297,7 +301,7 @@ li a.activ, li a:hover {
   .seccion-index__article {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 550px) 250px 600px;
+    grid-template-rows: repeat(2, 550px) repeat(2, 1fr);
     grid-template-areas: "seccion-index_article__img" "seccion-index_article__caracteristicas" "seccion-index_article__trailer" "seccion-index_article__p";
   }
   .seccion-index_article__img {
@@ -879,6 +883,14 @@ textarea {
   .seccion-contacto__titulo {
     font-size: 40px;
   }
+}
+.icono:hover {
+  border: #ffffff;
+  border-radius: 20px;
+  background-color: #808080;
+  width: 50px;
+  height: 50px;
+  transition: 0.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
