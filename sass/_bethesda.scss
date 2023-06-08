@@ -24,7 +24,7 @@
             grid-area: seccion-bethesda_art__img;
             display: flex;
             align-self: center;
-            border: 3px solid #808080;
+            border: $bordes-caja;
             border-radius: 3px;
         }
         //Trailer
@@ -32,7 +32,7 @@
             grid-area: seccion-bethesda_art__trailer;
             display: flex;
             align-self: center;
-            border: 3px solid #808080;
+            border: $bordes-caja;
             border-radius: 3px;
         }
         //Parrafo
@@ -40,7 +40,7 @@
             grid-area: seccion-bethesda_art__p;
             background-color: #d3d3d3;
             padding: 10px;
-            border: 3px solid #808080;
+            border: $bordes-caja;
             border-radius: 3px;
             font-size: 18px;
             height: fit-content;
@@ -54,7 +54,7 @@
             display: flex;
             justify-self: center;
             align-self: center;
-            border: 3px solid #808080;
+            border: $bordes-caja;
             border-radius: 3px;
             width: 100%;
         }

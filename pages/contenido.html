@@ -4,10 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Aprende acerca de uno los mejores juegos de rol a dia de hoy. Te esperan fastasticas aventuras y legendarias batallas.">
+        <meta name="keywords" content="The Elder Scolls V: Skyrim, Skyrim, The Elder Scrolls, Skyrim Special Edition, Skyrim Anniversary Edition, Bethesda, juego de rol, juego mundo abierto, Dragonborn ,Dawnguard, Hearthfire, videojuego, Elder Scrolls">
         <!--Bootstrap CSS-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
-        <!--Scrolls CSS-->
+        <!--Scrolls AOS-->
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <!--Animate CSS-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <!--Fontawesome-->
         <script src="https://kit.fontawesome.com/78d0b6246a.js" crossorigin="anonymous"></script>
         <!--Google fonts-->
@@ -17,7 +21,7 @@
         <!--CSS-->
         <link rel="stylesheet" href="../css/style.css">
         <!--Icono ventana-->
-        <link rel="shortcut icon" href="../icon/icon_skyrim_PpP_icon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="../assets/icon/icons8-skyrim.svg" type="image/x-icon">
         <!--Titulo ventana-->
         <title>Contenido</title>
     </head>
@@ -30,9 +34,9 @@
                     <i class="fas fa-bars"></i>
                 </label>
                 <a href="../index.html" class="header_nav__a">
-                    <img src="../images/header/elder-scroll-skyrim-nav-2.jpg" alt="the-elder-scrolls-v-skyrim" class="header_nav_a__img-nav">
+                    <img src="../assets/images/header/elder-scroll-skyrim-nav-2.jpg" alt="the-elder-scrolls-v-skyrim" class="header_nav_a__img-nav">
                 </a>
-                <ul class="header_nav__ul">
+                <ul class="header_nav__ul" style="z-index: 100">
                     <li><a href="../index.html">Inicio</a></li>
                     <li><a class="activ" href="#">Contenido</a></li>
                     <li><a href="./saga.html">Saga</a></li>
@@ -43,49 +47,43 @@
         </header>
         <!--Contenido principal-->
         <main>
-            <h1 class="titulo-contenido">Juego Base</h1>
+            <h1 class="titulo-contenido animate__animated animate__fadeIn">Juego Base</h1>
             <section class="seccion-contenido">
                 <!--Mapa-->
                 <article class="seccion-contenido__art-mapa">
-                    <h2 class="seccion-contenido_art-mapa__titulo-mapa">Mapa</h2>
-                    <p class="seccion-contenido_art-mapa__p">El juego se desarrolla en la region de "Skyrim", ubicada al norte del continente de <a class="tamriel" href="https://es.wikipedia.org/wiki/Tamriel" target="_blank"><strong>Tamriel</strong></a>, caracterizada por sus climas frios y terreno montañoso. La misma se encuentra dividida en nueve comarcas, cada una con sus diferentes capitales y culturas para explorar. Si bien nos encontraremos con las diferentes razas que viven en el mundo de elder scrolls, los nordicos son aquellos que veremos mas a diario durante nuestro recorrido. Los mismos nos mostraran una cultura con muchos rasgos de una cultura guerrera y bastantre importancia en las tradiciones.A lo largo del mapa encontraremos diversas zonas para explorar y aventurarse a lo desconocido, mausoleos nordicos antiguos, infestados de no-muertos, donde podremos encontrar tesoros de tiempos antiguos, tambien podremos despejar campamentos de bandidos y traer seguridad a las tierras nordicas y por supuesto no podemos olvidarnos de los dragones, a los cuales podremos enfrentar en combates epicos a lo largo de todo Skyrim.</p>
-                    <img class="seccion-contenido_art-mapa__img" src="../images/contenido/skyrim-map (1).jpg" alt="mapa-skyrim">
+                    <h2 class="seccion-contenido_art-mapa__titulo-mapa" data-aos="fade-down">Mapa</h2>
+                    <p class="seccion-contenido_art-mapa__p" data-aos="fade-down">El juego se desarrolla en la region de "Skyrim", ubicada al norte del continente de <a class="tamriel" href="https://es.wikipedia.org/wiki/Tamriel" target="_blank"><strong>Tamriel</strong></a>, caracterizada por sus climas frios y terreno montañoso. La misma se encuentra dividida en nueve comarcas, cada una con sus diferentes capitales y culturas para explorar. Si bien nos encontraremos con las diferentes razas que viven en el mundo de elder scrolls, los nordicos son aquellos que veremos mas a diario durante nuestro recorrido. Los mismos nos mostraran una cultura con muchos rasgos de una cultura guerrera y bastantre importancia en las tradiciones.A lo largo del mapa encontraremos diversas zonas para explorar y aventurarse a lo desconocido, mausoleos nordicos antiguos, infestados de no-muertos, donde podremos encontrar tesoros de tiempos antiguos, tambien podremos despejar campamentos de bandidos y traer seguridad a las tierras nordicas y por supuesto no podemos olvidarnos de los dragones, a los cuales podremos enfrentar en combates epicos a lo largo de todo Skyrim.</p>
+                    <img class="seccion-contenido_art-mapa__img" src="../assets/images/contenido/skyrim-map (1).jpg" alt="mapa-skyrim" data-aos="fade-up">
                 </article>
                 <!--Clases-->
                 <article class="seccion-contenido__art-clases">
-                    <h2 class="seccion-contenido_art-clases__titulo-clases">Clases</h2>
-                    <p class="seccion-contenido_art-clases__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias, suscipit eveniet! Ducimus, praesentium voluptas. Tempore repellendus explicabo eos suscipit delectus, dolores assumenda laudantium quisquam consequuntur officia facilis! Perferendis voluptas magnam aut, tenetur nulla numquam atque fuga ex consequatur excepturi quas corrupti, nisi aperiam sequi iste, officiis maiores exercitationem fugit minus alias consectetur enim? Modi quo consequuntur hic impedit culpa est nostrum. Fuga quam nisi voluptatum ab? Quidem autem possimus rem, quod consequuntur debitis id eveniet culpa dolores laboriosam hic praesentium! Perferendis sequi ratione ducimus inventore. Dolorum hic modi consequatur commodi! Tenetur consequuntur itaque dolorem, rerum possimus voluptatem? Odio, temporibus rerum!</p>
+                    <h2 class="seccion-contenido_art-clases__titulo-clases" data-aos="fade-down">Clases</h2>
+                    <p class="seccion-contenido_art-clases__p" data-aos="fade-down">Skyrim se diferencia a su predecesores y otros juegos de rol en que no tiene una seleccion de clases comun, en la que te dan una lista de opciones a elegir (mago, guerrero, asesino, etc.), determinando tu progreso y adquisicion de habilidades. Los creadores decidieron no incluir este sistema, implementando distintas ramas de habilidades epecificas, asi como "armas a una mano (subira de nivel al inflingir daño a enemigos con espadas, hachas o mazas)", "armadura pesada (subira de nivel cuando recibamos daño y tengamos una armadura pesada)", "magia de curacion (subira de nivel al curarnos)", etc. Al subir estas abilidades incrementaremos el nivel personal de nuestro personaje, adquiriendo un puntos de habilidad para distribuir entre las distintas ramas y 10 puntos por nivel para incrementar nuestra vida, magia o aguante.</p>
                 </article>
-                <div class="seccion_contenido__div">
-                    <img class="seccion_contenido_div__img" src="../images/contenido/skill-nebula (1).jpg" alt="constelacion-clases">
+                <div class="seccion_contenido__div" data-aos="fade-up">
+                    <img class="seccion_contenido_div__img" src="../assets/images/contenido/skill-nebula (1).jpg" alt="constelacion-clases">
                 </div>
-                <h2 class="seccion-contenido__titulo-expansiones">Expansiones</h2>
+                <h2 class="seccion-contenido__titulo-expansiones" data-aos="fade-up" data-aos-anchor-placement="top-bottom">Expansiones</h2>
                 <!--Dawnguard-->
                 <article class="art-dlc">
-                    <h3 class="titulo-dlc">Dawnguard</h3>
-                    <img class="img-dlc" src="../images/contenido/dawnguard.jpg" alt="dawnguard">
-                    <p class="p-dlc">Dawnguard fue la primera expansion oficial de Skyrim, lanzada el dia 26 de Junio 2012. Una nueva aventura que agrega diferentes caracteristicas a nuestro juego, entre ellas, una campaña contandonos sobre el enfrentamiento entre la Guardia del Alba, una orden cazavampiros y un culto de vampiros ancestrales liderados por Lord Harkon. Deberemos elgir a que bando nos uniremos y asi obtendremos diferentes recompensas (equipamiento, abilidades, bonificaciones, etc) segun a quien escojamos apoyar. Tambien se agregaron diferentes contrucciones y mazmorras que completar. En total, podremos disfrutar de 10 a 12 horas de contenido adicional en una historia atrapante.</p>
-                    <iframe class="trailer-dlc" width="560" height="315" src="https://www.youtube.com/embed/3PjBSicSVqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="titulo-dlc" data-aos="fade-down">Dawnguard</h3>
+                    <img class="img-dlc" src="../assets/images/contenido/dawnguard.jpg" alt="dawnguard" data-aos="fade-down">
+                    <p class="p-dlc" data-aos="fade-down">Dawnguard fue la primera expansion oficial de Skyrim, lanzada el dia 26 de Junio 2012. Una nueva aventura que agrega diferentes caracteristicas a nuestro juego, entre ellas, una campaña contandonos sobre el enfrentamiento entre la Guardia del Alba, una orden cazavampiros y un culto de vampiros ancestrales liderados por Lord Harkon. Deberemos elgir a que bando nos uniremos y asi obtendremos diferentes recompensas (equipamiento, abilidades, bonificaciones, etc) segun a quien escojamos apoyar. Tambien se agregaron diferentes contrucciones y mazmorras que completar. En total, podremos disfrutar de 10 a 12 horas de contenido adicional en una historia atrapante.</p>
+                    <iframe class="trailer-dlc" width="560" height="315" src="https://www.youtube.com/embed/3PjBSicSVqI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-aos="fade-up"></iframe>
                 </article>
-                <!---------------------------------------------------------------------------------->
-                <!--ACA ESTA EL SCROLL APLICADO----------------------------------------------------->
-                <!---------------------------------------------------------------------------------->
                 <!--Hearthfire-->
                 <article class="art-dlc">
-                    <h3 class="titulo-dlc" data-aos="fade-right">Hearthfire</h3>
-                    <img class="img-dlc" data-aos="fade-right" src="../images/contenido/hearthfire_DLC.jpg" alt="hearthfire">
-                    <p class="p-dlc" data-aos="fade-left">Hearthfire, la segunda expansion ofical de Skyrim, lanzada el 4 de Diciembre de 2012. A diferencia de Dawnguard, esta no se centra en el combate y la aventura, sino que nos da la pisibilidad de comprar un terreno y diseñar una mansion a tu gusto (Podremos elgir entre 3 ubicaciones maximo). Tambien se introdujeron las adopciones, permitiendo que adoptar niños en el orfanato de Riften y que vivan en nuestro hogar.</p>
-                    <iframe class="trailer-dlc" width="560" height="315" src="https://www.youtube.com/embed/7gXwNVpDmfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-aos="fade-left"></iframe>
+                    <h3 class="titulo-dlc" data-aos="fade-down">Hearthfire</h3>
+                    <img class="img-dlc" src="../assets/images/contenido/hearthfire_DLC.jpg" alt="hearthfire" data-aos="fade-down">
+                    <p class="p-dlc" data-aos="fade-down">Hearthfire, la segunda expansion ofical de Skyrim, lanzada el 4 de Diciembre de 2012. A diferencia de Dawnguard, esta no se centra en el combate y la aventura, sino que nos da la pisibilidad de comprar un terreno y diseñar una mansion a tu gusto (Podremos elgir entre 3 ubicaciones maximo). Tambien se introdujeron las adopciones, permitiendo que adoptar niños en el orfanato de Riften y que vivan en nuestro hogar.</p>
+                    <iframe class="trailer-dlc" width="560" height="315" src="https://www.youtube.com/embed/7gXwNVpDmfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-aos="fade-up"></iframe>
                 </article>
-                <!---------------------------------------------------------------------------------->
-                <!--ACA ESTA EL SCROLL APLICADO----------------------------------------------------->
-                <!---------------------------------------------------------------------------------->
                 <!--Dragonborn-->
                 <article class="art-dlc">
-                    <h3 class="titulo-dlc">Dragonborn</h3>
-                    <img class="img-dlc" src="../images/contenido/dragonborn.jpg" alt="dragonborn">
-                    <p class="p-dlc">La tercera y ultima expansion oficial de Skyrim, Dragonborn, lanzada el dia 4 de Diciembre de 2013 nos trae una gran cantidad de contenido en comparacion con las anteriores. En esta campaña viajaremos a la isla de Solstheim, ubicada en Morrowind, un mapa completo adicional con nuvos asentamientos, personajes, mazmorras e increibles misiones. Una vez en la isla, nos enfrentaremos al culto de Miraak, un antiguo sacerdote dragon y primer sangre de dragon. Deberemos evitar que el mismo reviva y conquiste todo Tamriel. Se estima que nos brinda 7 horas de juego adicional solo contando la serie de misiones principales.</p>
-                    <iframe class="trailer-dlc" width="560" height="315" src="https://www.youtube.com/embed/TRmdXDH9b1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <h3 class="titulo-dlc" data-aos="fade-down">Dragonborn</h3>
+                    <img class="img-dlc" src="../assets/images/contenido/dragonborn.jpg" alt="dragonborn" data-aos="fade-down">
+                    <p class="p-dlc" data-aos="fade-down">La tercera y ultima expansion oficial de Skyrim, Dragonborn, lanzada el dia 4 de Diciembre de 2013 nos trae una gran cantidad de contenido en comparacion con las anteriores. En esta campaña viajaremos a la isla de Solstheim, ubicada en Morrowind, un mapa completo adicional con nuvos asentamientos, personajes, mazmorras e increibles misiones. Una vez en la isla, nos enfrentaremos al culto de Miraak, un antiguo sacerdote dragon y primer sangre de dragon. Deberemos evitar que el mismo reviva y conquiste todo Tamriel. Se estima que nos brinda 7 horas de juego adicional solo contando la serie de misiones principales.</p>
+                    <iframe class="trailer-dlc" width="560" height="315" src="https://www.youtube.com/embed/TRmdXDH9b1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen data-aos="fade-up"></iframe>
                 </article>               
             </section>
         </main>
@@ -121,5 +119,6 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
         <!--Scrolls CSS-->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
     </body>
 </html>
