@@ -1,6 +1,6 @@
 //*Titulo*/
 .titulo-saga {
-    color: #808080;
+    color: $titulos;
     text-align: center;
     padding: 50px;
     margin-bottom: 0;
@@ -15,24 +15,24 @@
     .art-saga {
         display: flex;
         gap: 30px;
-        margin: 15px 100px 15px 100px;
+        margin: 15px 100px;
     }
     //Parrafo saga
     .p-saga {
-        background-color: #d3d3d3;
-        padding: 10px;
+        background-color: $background;
+        padding: $padding-cajas;
         width: 100%;
         margin-bottom: 0;
         border: $bordes-caja;
-        border-radius: 3px;
+        border-radius: $bordes-radius;
         text-align: justify;
         height: fit-content;
         align-self: center;
     }
     //Imagenes saga
     .img-saga {
-        border: 3px solid #808080;
-        border-radius: 3px;
+        border: $bordes-caja;
+        border-radius: $bordes-radius;
     }
     //Art-Oblivion
     .seccion-saga__oblivion {
@@ -61,7 +61,7 @@
     .seccion-saga {
         //Art-saga
         .art-saga {
-            margin: 0 50px 0px 50px;
+            margin: 0 50px;
             padding-bottom: 20px;
         }
         //Imagenes saga
@@ -95,7 +95,7 @@
     .seccion-saga {
         //Art-saga
         .art-saga {
-            margin: 0 10px 0 10px;
+            margin: 0 10px;
         }
         //img-saga
         .img-saga {

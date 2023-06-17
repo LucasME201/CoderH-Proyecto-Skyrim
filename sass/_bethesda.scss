@@ -1,7 +1,7 @@
 //*Bethesda*/
 //Titulo bethesda
 .titulo-bethesda {
-    color: #808080;
+    color: $titulos;
     text-align: center;
     font-size: 50px;
     padding-top: 50px;
@@ -18,14 +18,14 @@
         "seccion-bethesda_art__img-juegos seccion-bethesda_art__img-juegos"
         ;
         gap: 10px;
-        margin: 50px 100px 50px 100px;
+        margin: 50px 100px;
         //Img Bethesda
         .seccion-bethesda_art__img {
             grid-area: seccion-bethesda_art__img;
             display: flex;
             align-self: center;
             border: $bordes-caja;
-            border-radius: 3px;
+            border-radius: $bordes-radius;
         }
         //Trailer
         .seccion-bethesda_art__trailer {
@@ -33,15 +33,15 @@
             display: flex;
             align-self: center;
             border: $bordes-caja;
-            border-radius: 3px;
+            border-radius: $bordes-radius;
         }
         //Parrafo
         .seccion-bethesda_art__p {
             grid-area: seccion-bethesda_art__p;
-            background-color: #d3d3d3;
-            padding: 10px;
+            background-color: $background;
+            padding: $padding-cajas;
             border: $bordes-caja;
-            border-radius: 3px;
+            border-radius: $bordes-radius;
             font-size: 18px;
             height: fit-content;
             margin: 0;
@@ -55,7 +55,7 @@
             justify-self: center;
             align-self: center;
             border: $bordes-caja;
-            border-radius: 3px;
+            border-radius: $bordes-radius;
             width: 100%;
         }
     }

@@ -12,8 +12,6 @@
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <!--Animate CSS-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-        <!--Fontawesome-->
-        <script src="https://kit.fontawesome.com/78d0b6246a.js" crossorigin="anonymous"></script>
         <!--Google fonts-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,21 +26,25 @@
     <body>
         <!--Cabecera/Navegador-->
         <header>
-            <nav class="header__nav">
-                <input type="checkbox" id="check">
-                <label for="check" class="header_nav__checkbtn">
-                    <i class="fas fa-bars"></i>
-                </label>
-                <a href="../index.html" class="header_nav__a">
-                    <img src="../assets/images/header/elder-scroll-skyrim-nav-2.jpg" alt="the-elder-scrolls-v-skyrim" class="header_nav_a__img-nav">
-                </a>
-                <ul class="header_nav__ul" style="z-index: 100">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./contenido.html">Contenido</a></li>
-                    <li><a class="activ" href="#">Saga</a></li>
-                    <li><a href="./bethesda.html">Bethesda</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary header__nav">
+                <div class="container-fluid header_nav__div">
+                    <a class="navbar-brand header_nav_div__a" href="../index.html">
+                        <img class="header_nav_div_a__img" src="/assets/images/header/256x256.png" alt="icono-skyrim">
+                        TES V: Skyrim
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                        <div class="navbar-nav nav-lista">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                            <a class="nav-link" href="/pages/contenido.html">Contenido</a>
+                            <a class="nav-link active" aria-current="page" href="#">Saga</a>
+                            <a class="nav-link" href="/pages/bethesda.html">Bethesda</a>
+                            <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                        </div>
+                    </div>
+                </div>
             </nav>
         </header>
         <!--Contenido principal-->
@@ -73,27 +75,27 @@
         </main>
         <!--Pie de pagina-->
         <div class="my-0">
-            <footer class="text-center text-white" style="background-color: #d3d3d3;">
+            <footer class="text-center text-white">
                 <!-- Grid container -->
                 <div class="container pt-4">
-                    <!-- Section: Social media -->
-                    <section class="mb-4">
+                    <!-- Social media -->
+                    <div class="mb-4">
                         <!-- Facebook -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.facebook.com/lucas.kpo.313" role="button" data-mdb-ripple-color="dark" target="_blank"> 
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 icono" href="https://www.facebook.com/lucas.kpo.313" role="button" data-mdb-ripple-color="dark" target="_blank"> 
                             <i class="fab fa-facebook-f"></i>
                         </a>
                         <!-- Instagram -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://www.instagram.com/luquitaselso/" role="button" data-mdb-ripple-color="dark" target="_blank">
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 icono" href="https://www.instagram.com/luquitaselso/" role="button" data-mdb-ripple-color="dark" target="_blank">
                             <i class="fab fa-instagram"></i>
                         </a>
                         <!-- Github -->
-                        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/LucasME201" role="button" data-mdb-ripple-color="dark" target="_blank">
+                        <a class="btn btn-link btn-floating btn-lg text-dark m-1 icono" href="https://github.com/LucasME201" role="button" data-mdb-ripple-color="dark" target="_blank">
                             <i class="fab fa-github"></i>
                         </a>
-                    </section>
+                    </div>
                 </div>
                 <!-- Copy -->
-                <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="text-center text-dark p-3 copy">
                     Lucas Elso:
                     <a class="text-dark">Proyecto Desarrollo Web (Coderhouse)</a>
                 </div>
@@ -104,5 +106,7 @@
         <!--Scrolls CSS-->
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>AOS.init();</script>
+        <!--Fontawesome-->
+        <script src="https://kit.fontawesome.com/78d0b6246a.js" crossorigin="anonymous"></script>
     </body>
 </html>
